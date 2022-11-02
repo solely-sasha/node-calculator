@@ -21,4 +21,26 @@ function add(num1, num2){
 
 if(operations[index] === 'add'){
     console.log(`the result of ${num1} + ${num2} is`, add(num1, num2))
+
+}else if(operations[index] === 'subtract'){
+    function subtract(num1, num2){
+        return (parseInt(num1) - parseInt(num2))
+    }
+    console.log(`the result of ${num1} - ${num2} is`, subtract(num1, num2))
+
+
+}else if(operations[index] === 'multiply'){
+    function multiply(num1, num2){
+        return (parseInt(num1) * parseInt(num2))
+    }
+    console.log(`the result of ${num1} * ${num2} is`, multiply(num1, num2))
+
+
+}else{
+    function divide(num1, num2){
+        return (parseInt(num1) / parseInt(num2))
+    }
+    console.log(`the result of ${num1} / ${num2} is`, divide(num1, num2))
+
 }
+
